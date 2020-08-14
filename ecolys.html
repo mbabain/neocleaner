@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoClean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="email" viewBox="0 0 16 12">
+            <g>
+                <path fill="#443e3e" d="M14.594-.09C15.37-.09 16 .544 16 1.316v9.375c0 .777-.634 1.406-1.406 1.406H1.406A1.409 1.409 0 0 1 0 10.691V1.316C0 .541.632-.09 1.406-.09zM1.605.848l6.425 6.37L14.4.847zm3.847 5.134L.938 1.506v8.991zM14.4 11.16L9.906 6.667 8.363 8.21a.469.469 0 0 1-.662.002l-1.583-1.57L1.6 11.16zm.662-9.65L10.57 6.004l4.493 4.493z"/>
+            </g>
+        </symbol>
+        <symbol id="tel" viewBox="0 0 15 15">
+            <g>
+                <path fill="#443e3e" d="M10.78 15c-.484 0-.964-.086-1.433-.256a15.29 15.29 0 0 1-5.552-3.539A15.288 15.288 0 0 1 .256 5.653a4.149 4.149 0 0 1-.212-2.039A4.247 4.247 0 0 1 2.231.5c.617-.332 1.29-.5 2-.5.221 0 .412.154.458.37l.736 3.434a.469.469 0 0 1-.127.43L4.041 5.49a12.339 12.339 0 0 0 5.468 5.468l1.257-1.257a.47.47 0 0 1 .43-.127l3.433.736c.217.046.37.237.37.458 0 .71-.167 1.383-.499 2a4.264 4.264 0 0 1-3.114 2.186c-.202.03-.404.045-.606.045zM3.856.958a3.247 3.247 0 0 0-2.321 1.383 3.23 3.23 0 0 0-.398 2.992 14.217 14.217 0 0 0 8.53 8.53 3.23 3.23 0 0 0 2.992-.398 3.247 3.247 0 0 0 1.383-2.321l-2.793-.599-1.313 1.313a.469.469 0 0 1-.53.093 13.273 13.273 0 0 1-6.357-6.356.469.469 0 0 1 .093-.531l1.313-1.313z"/>
+            </g>
+        </symbol>
+        <symbol id="inst" viewBox="0 0 14 14">
+            <g>
+                <path d="M9.625 0H4.375C1.95913 0 0 1.95913 0 4.375V9.625C0 12.0409 1.95913 14 4.375 14H9.625C12.0409 14 14 12.0409 14 9.625V4.375C14 1.95913 12.0409 0 9.625 0ZM12.6875 9.625C12.6875 11.3138 11.3138 12.6875 9.625 12.6875H4.375C2.68625 12.6875 1.3125 11.3138 1.3125 9.625V4.375C1.3125 2.68625 2.68625 1.3125 4.375 1.3125H9.625C11.3138 1.3125 12.6875 2.68625 12.6875 4.375V9.625Z"/>
+                <path d="M7 3.5C5.06712 3.5 3.5 5.06712 3.5 7C3.5 8.93288 5.06712 10.5 7 10.5C8.93288 10.5 10.5 8.93288 10.5 7C10.5 5.06712 8.93288 3.5 7 3.5ZM7 9.1875C5.79425 9.1875 4.8125 8.20575 4.8125 7C4.8125 5.79338 5.79425 4.8125 7 4.8125C8.20575 4.8125 9.1875 5.79338 9.1875 7C9.1875 8.20575 8.20575 9.1875 7 9.1875Z"/>
+                <path d="M10.7625 3.70375C11.0201 3.70375 11.2289 3.49494 11.2289 3.23737C11.2289 2.9798 11.0201 2.771 10.7625 2.771C10.5049 2.771 10.2961 2.9798 10.2961 3.23737C10.2961 3.49494 10.5049 3.70375 10.7625 3.70375Z"/>
+            </g>
+        </symbol>
+        <symbol id="vk" viewBox="0 0 14 8">
+            <g>
+                <path d="M13.8752 7.12485C13.8376 7.06184 13.6048 6.55606 12.4847 5.51648C11.3122 4.4279 11.4697 4.60466 12.882 2.7224C13.7422 1.57607 14.0861 0.876014 13.9785 0.576742C13.8761 0.291471 13.2434 0.366726 13.2434 0.366726L11.1398 0.378977C11.1398 0.378977 10.984 0.357975 10.8676 0.427106C10.7547 0.495361 10.6821 0.652872 10.6821 0.652872C10.6821 0.652872 10.3487 1.54019 9.90417 2.29449C8.96698 3.88623 8.59158 3.97024 8.43844 3.87136C8.08229 3.64122 8.17155 2.94554 8.17155 2.452C8.17155 0.909266 8.40519 0.266094 7.71564 0.0998314C7.48637 0.0447024 7.31836 0.00794971 6.73294 0.00182426C5.98213 -0.00605132 5.34596 0.00444945 4.98631 0.180337C4.74654 0.297596 4.56191 0.55924 4.67479 0.574117C4.81392 0.592493 5.12895 0.658998 5.29608 0.886514C5.51223 1.17966 5.50435 1.83946 5.50435 1.83946C5.50435 1.83946 5.62861 3.65522 5.2147 3.88098C4.93031 4.03587 4.5409 3.71997 3.70522 2.27524C3.27731 1.53581 2.95354 0.717627 2.95354 0.717627C2.95354 0.717627 2.89141 0.565366 2.78027 0.483985C2.64551 0.385103 2.4565 0.3536 2.4565 0.3536L0.456104 0.365851C0.456104 0.365851 0.155957 0.374602 0.0456987 0.504986C-0.0523085 0.62137 0.0378231 0.861137 0.0378231 0.861137C0.0378231 0.861137 1.60419 4.52503 3.37707 6.37229C5.00381 8.06554 6.8502 7.95441 6.8502 7.95441H7.68676C7.68676 7.95441 7.93965 7.92641 8.06829 7.78727C8.1873 7.65951 8.18292 7.41974 8.18292 7.41974C8.18292 7.41974 8.1663 6.29704 8.68783 6.13165C9.2015 5.96889 9.86129 7.21673 10.5605 7.69714C11.089 8.06029 11.4907 7.98066 11.4907 7.98066L13.3607 7.95441C13.3607 7.95441 14.339 7.89403 13.8752 7.12485Z">
+            </g>
+        </symbol>
+        <symbol id="arrow-next" viewBox="0 0 36 36">
+            <g>
+                <path d="M0.504205 17.7166C0.570322 27.369 8.44877 35.1402 18.1012 35.0741C27.7535 35.008 35.5248 27.1296 35.4587 17.4772C35.3817 7.82939 27.5097 0.0645009 17.8617 0.119665C8.20934 0.185782 0.438089 8.06423 0.504205 17.7166ZM34.2935 17.4852C34.3552 26.4941 27.1021 33.8473 18.0932 33.909C9.08424 33.9707 1.73106 26.7176 1.66935 17.7086C1.61794 8.70393 8.86514 1.35676 17.8697 1.28481C26.8786 1.22311 34.2318 8.47623 34.2935 17.4852Z"/>
+                <path d="M12.861 8.15662L22.4009 17.5667L12.9908 27.1066C12.7743 27.3338 12.7767 27.6918 12.9963 27.916C13.2214 28.1459 13.5903 28.1498 13.8202 27.9247L23.6393 17.9701C23.7478 17.8601 23.8083 17.7116 23.8072 17.5571C23.8061 17.4025 23.7437 17.2548 23.6337 17.1464L13.6791 7.32721C13.6744 7.32237 13.6696 7.31767 13.6647 7.31304C13.4318 7.09113 13.063 7.09999 12.8411 7.33295C12.6191 7.56591 12.628 7.93464 12.861 8.15662Z"/>
+            </g>
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 36 36">
+            <g>
+                <path d="M0.504205 17.7166C0.570322 27.369 8.44877 35.1402 18.1012 35.0741C27.7535 35.008 35.5248 27.1296 35.4587 17.4772C35.3817 7.82939 27.5097 0.0645009 17.8617 0.119665C8.20934 0.185782 0.438089 8.06423 0.504205 17.7166ZM34.2935 17.4852C34.3552 26.4941 27.1021 33.8473 18.0932 33.909C9.08424 33.9707 1.73106 26.7176 1.66935 17.7086C1.61794 8.70393 8.86514 1.35676 17.8697 1.28481C26.8786 1.22311 34.2318 8.47623 34.2935 17.4852Z" fill=""/>
+                <path d="M12.861 8.15662L22.4009 17.5667L12.9908 27.1066C12.7743 27.3338 12.7767 27.6918 12.9963 27.916C13.2214 28.1459 13.5903 28.1498 13.8202 27.9247L23.6393 17.9701C23.7478 17.8601 23.8083 17.7116 23.8072 17.5571C23.8061 17.4025 23.7437 17.2548 23.6337 17.1464L13.6791 7.32721C13.6744 7.32237 13.6696 7.31767 13.6647 7.31304C13.4318 7.09113 13.063 7.09999 12.8411 7.33295C12.6191 7.56591 12.628 7.93464 12.861 8.15662Z"/>
+
+            </g>
+        </symbol>
+    </svg>
+        <!-- /Sprites -->
+
+    <div class="main">
+        <!-- Header -->
+        <header class="section-outer section-header">
+            <div class="section-inner">
+                <a href="index.html" class="section-header-logo">
+                    <img src="img/header/logo.png" alt="">
+                </a>
+                <nav class="section-header-nav">
+                    <a href="ourProduct.html" class="section-header-nav__link active">
+                        <span>Наша продукция</span>
+                    </a>
+                    <a href="advantages.html" class="section-header-nav__link">Преимущества</a>
+                    <a href="#" class="section-header-nav__link">Полезная информация</a>
+                    <a href="#" class="section-header-nav__link">Контакты</a>
+                </nav>
+                <div class="section-header-mail">
+                    <svg class="email">
+                        <use xlink:href="#email"></use>
+                    </svg>
+                    <div class="section-header-mail-text">info@neo-clean.ru</div>
+                </div>
+                <dhiv class="section-header-contact">
+                    <svg class="tel">
+                        <use xlink:href="#tel"></use>
+                    </svg>
+                    <div class="section-header-contact-text">
+                        <div class="section-header-contact-city">Волгоград</div>
+                        <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
+                        <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
+                    </div>
+                </dhiv>
+            </div>
+        </header>
+        <!-- /Header -->
+
+        <!-- product-descripton -->
+        <div class="section-outer section-product-descripton">
+            <div class="section-inner">
+                <div class="title">EcoLys</div>
+                <div class="section-product-descripton__item">
+                    <div class="section-product-descripton-specifications">
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/washing-machine.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Порошок с нормируемым пенообразованием предназначен для замачивания белья, предварительной и основной стирки всех типов тканей, за исключением шерсти и шёлка, в стиральных машинах любого типа
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/safety.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Безопасен для ручной стирки
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/laundry.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Подходит для ежедневного использования
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/shirt.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Деликатно и мягко очищает волокна ткани, удаляет белковые загрязнения, пятна от продуктов питания и иные загрязнения.
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/drop.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Полностью выполаскивается
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/bucket.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Содержит смягчитель воды,  препятствующий образованию накипи на элементах стиральной машины
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-specifications__item">
+                            <div class="section-product-descripton-specifications__img">
+                                <img src="img/product-description/bucket-30.svg" alt="">
+                            </div>
+                            <div class="section-product-descripton-specifications__text">
+                                Рекомендованная температура стирки - от 40 С до 60 С
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-product-descripton-slider">
+                     <img src="img/product-description/ecolys.png" alt="">
+                     <div class="section-product-descripton-slider-buttons">
+                        <div class="section-product-descripton-slider__button">
+                            <svg class="arrow arrow--prev">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="section-product-descripton-slider__button">
+                            <svg class="arrow arrow--next">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="section-product-descripton-info">
+                       <div class="section-product-descripton-info__title">Общая информация:
+                    </div>
+                    <div class="section-product-descripton-info__text">
+                            Порошок с нормируемым пенообразованием предназначен для замачивания белья, предварительной и основной стирки всех типов тканей, за исключением шерсти и шёлка, в стиральных машинах любого типа. Безопасен для ручной стирки. 
+                        <p>
+                            Подходит для ежедневного использования. Деликатно и мягко очищает волокна ткани, удаляет белковые загрязнения, пятна от продуктов питания и иные загрязнения. Полностью выполаскивается. 
+                        </p>
+                        <p>
+                            Содержит смягчитель воды,  препятствующий образованию накипи на элементах стиральной машины. Рекомендованная температура стирки - от 40 С до 60 С.
+                        </p>
+                    </div>
+                    <button type="button" class="section-product-descripton-info__button">
+                        <span>заказать</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product-item -->
+
+        <!-- Footer -->
+        <footer class="section-outer section-footer section-footer--gray">
+            <div class="section-inner">
+                <div class="section-footer-copyright">
+                    <span>2019-2020</span>
+                    <span>ООО "Неонклин"</span>
+                </div>
+                <nav class="section-footer-nav">
+                    <a href="#" class="section-footer-nav__link">
+                        Правила использования cookie
+                    </a>
+                    <a href="#" class="section-footer-nav__link">
+                        Политика конфеденциальности
+                    </a>
+                    <a href="#" class="section-footer-nav__link">
+                        Пользовательское согласшение
+                    </a>
+                </nav>
+                <div class="section-footer-media">
+                    <span class="section-footer-media__text">
+                        Мы в соц. сетях 
+                    </span>
+                    <a href="#" class="section-footer-media__link">
+                        <svg class="inst">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#"  class="section-footer-media__link">
+                        <svg class="vk">
+                            <use xlink:href="#vk"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+</body>
+</html>
