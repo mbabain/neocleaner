@@ -325,6 +325,8 @@ body {
         shape-rendering: crispEdges;
         transform: translateZ(0);
         position: absolute;
+        transition: opacity 0.4s linear;
+
 
         &-wrapper {
             position: relative;
@@ -345,6 +347,10 @@ body {
             color: #0B4357;
             transform: translate3d(-50%, -50%, 0);
         }
+    }
+
+    .active {
+        opacity: 1;
     }
 
     .bubble--1 {
@@ -462,7 +468,7 @@ body {
     } 40% {
         transform: translate3d(13%,5%,0);
     } 50% {
-        transform: translate3d(17%,-1%,-2%);
+        transform: translate3d(17%,-1%,0%);
     } 60% {
         transform: translate3d(23%,-8%,0);
     } 70% {

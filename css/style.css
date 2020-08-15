@@ -224,7 +224,8 @@ body {
   .section-first-block .bubble {
     shape-rendering: crispEdges;
     transform: translateZ(0);
-    position: absolute; }
+    position: absolute;
+    transition: opacity 0.4s linear; }
     .section-first-block .bubble-wrapper {
       position: relative; }
     .section-first-block .bubble img {
@@ -239,6 +240,8 @@ body {
       font-size: 24px;
       color: #0B4357;
       transform: translate3d(-50%, -50%, 0); }
+  .section-first-block .active {
+    opacity: 1; }
   .section-first-block .bubble--1 {
     left: 12%;
     top: 14%;
@@ -323,7 +326,7 @@ body {
   40% {
     transform: translate3d(13%, 5%, 0); }
   50% {
-    transform: translate3d(17%, -1%, -2%); }
+    transform: translate3d(17%, -1%, 0%); }
   60% {
     transform: translate3d(23%, -8%, 0); }
   70% {
