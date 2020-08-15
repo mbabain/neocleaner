@@ -220,10 +220,13 @@ body {
     font-weight: 600;
     color: #ffffff; }
   .section-first-block .bubble--item {
-    position: absolute; }
+    position: absolute;
+    transform: scale(0);
+    transition: 0.7s ease-out; }
+  .section-first-block .active {
+    transform: scale(1); }
   .section-first-block .bubble {
     shape-rendering: crispEdges;
-    transform: translateZ(0);
     position: absolute;
     transition: opacity 0.4s linear; }
     .section-first-block .bubble-wrapper {

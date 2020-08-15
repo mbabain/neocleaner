@@ -319,11 +319,16 @@ body {
 
     .bubble--item {
         position: absolute;
-    } 
+        transform: scale(0);
+        transition: 0.7s ease-out;
+    }
+
+    .active {
+        transform: scale(1);
+    }
 
     .bubble {
         shape-rendering: crispEdges;
-        transform: translateZ(0);
         position: absolute;
         transition: opacity 0.4s linear;
 
