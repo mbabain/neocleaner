@@ -54,33 +54,6 @@
     </svg>
         <!-- /Sprites -->
 
-    <div class="modal" style="display: none;">
-        <div class="modal-background"></div>
-        <form action="#" class="form">
-            <div class="form__button-close">
-                <svg class="close">
-                    <use xlink:href="#close"></use>
-                </svg>
-            </div>
-            <div class="form__title">Свяжитесь с нами</div>
-            <div class="form__input">
-                <input class="input" type="text" required="">
-                <span class="form__input-text">Ваше имя</span>
-            </div>
-            <div class="form__input">
-                <input class="input" type="tel" required="">
-                <span class="form__input-text">Телефон</span>
-            </div>
-            <div class="form__input">
-                <input class="input" type="email" required="">
-                <span class="form__input-text">Email</span>
-            </div>
-            <button type="submit" class="modal-form__button">
-                <span>Отправить</span>
-            </button>
-        </form>
-    </div>
-
     <div class="main">
         <!-- Header -->
         <header class="section-outer section-header">
@@ -89,12 +62,12 @@
                     <img src="img/header/logo.png" alt="">
                 </a>
                 <nav class="section-header-nav">
-                    <a href="ourProduct.html" class="section-header-nav__link active">
+                    <a href="ourProduct.html" class="section-header-nav__link">
                         <span>Наша продукция</span>
                     </a>
                     <a href="advantages.html" class="section-header-nav__link">Преимущества</a>
                     <a href="tips.html" class="section-header-nav__link">Полезная информация</a>
-                    <a href="contacts.html" class="section-header-nav__link">Контакты</a>
+                    <a href="contacts.html" class="section-header-nav__link active">Контакты</a>
                 </nav>
                 <div class="section-header-mail">
                     <svg class="email">
@@ -116,101 +89,59 @@
         </header>
         <!-- /Header -->
 
-        <!-- product-descripton -->
-        <section class="section-outer section-product-descripton">
+        <!-- Contacts -->
+        <section class="section-outer section-contacts">
             <div class="section-inner">
-                <div class="title">Neo</div>
-                <div class="section-product-descripton__item">
-                    <div class="section-product-descripton-specifications">
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/washing-machine.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Порошок с нормируемым пенообразованием предназначен для замачивания бельря, предварительной и основной стирки всех типов тканей, за исключением шерсти и шёлка, в стиральных машинах любого типа
+                <div class="section-contacts-addresses-and-form">
+                    <div class="title">Контакты</div>
+                    <div class="addresses">
+                        <div class="address">
+                            <div class="address__title">Юридическтй адрес :</div>
+                            <div class="address__text">город Волгоград, ул.Черноморская д.26, 400012
                             </div>
                         </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/safety.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Безопасен для ручной стирки
+                        <div class="address">
+                            <div class="address__title">Адрес производства:</div>
+                            <div class="address__text">город Волгоград, ул. Название 154 б 400038
                             </div>
                         </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/laundry.svg" alt="">
+                        <div class="addresses--online">
+                            <div class="address">
+                                <div class="address__title">Контактный номер:</div>
+                                <a class="address__text">+7 (999) 333 00 00
+                                </a>
                             </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Подходит для ежедневного использования
-                            </div>
-                        </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/shirt.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Деликатно и мягко очищает волокна ткани, удаляет белковые загрязнения, пятна от продуктов питания и иные загрязнения.
-                            </div>
-                        </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/drop.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Полностью выполаскивается
-                            </div>
-                        </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/bucket.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Содержит смягчитель воды,  препятствующий образованию накипи на элементах стиральной машины
-                            </div>
-                        </div>
-                        <div class="section-product-descripton-specifications__item">
-                            <div class="section-product-descripton-specifications__img">
-                                <img src="img/product-description/bucket-30.svg" alt="">
-                            </div>
-                            <div class="section-product-descripton-specifications__text">
-                                Рекомендованная температура стирки - от 40 С до 60 С
+                            <div class="address">
+                                <div class="address__title">Электронный адрес:</div>
+                                <a class="address__text">info@neo-clean.ru</a>
                             </div>
                         </div>
                     </div>
-                    <div class="section-product-descripton-slider">
-                     <img src="img/product-description/ecolys.png" alt="">
-                     <div class="section-product-descripton-slider-buttons">
-                        <div class="section-product-descripton-slider__button">
-                            <svg class="arrow arrow--prev">
-                                <use xlink:href="#arrow"></use>
-                            </svg>
+                    <form action="#" class="form">
+                        <div class="form__title">Свяжитесь с нами</div>
+                        <div class="form__input">
+                            <input class="input" type="text" required="">
+                            <span class="form__input-text">Ваше имя</span>
                         </div>
-                        <div class="section-product-descripton-slider__button">
-                            <svg class="arrow arrow--next">
-                                <use xlink:href="#arrow"></use>
-                            </svg>
+                        <div class="form__input">
+                            <input class="input" type="tel" required="">
+                            <span class="form__input-text">Телефон</span>
                         </div>
-                     </div>
-                    </div>
-                    <div class="section-product-descripton-info">
-                       <div class="section-product-descripton-info__title">Общая информация:
-                    </div>
-                    <div class="section-product-descripton-info__text">
-                        Предназначен для замачивания белья, предварительной и основной стирки всех типов тканей, за исключением шерсти и шёлка как в ручную, так и в автоматических стиральных машинах любого типа. 
-                        <p>
-                            Превосходно устраняет все виды загрязнений. Содержит смягчитель воды, повышающий эффективность стирки и препятствующий образованию накипи на нагревательных элементах стиральной машины.
-                        </p>
-                    </div>
-                    <button type="button" class="section-product-descripton-info__button">
-                        <span>заказать</span>
-                    </button>
-                    </div>
+                        <div class="form__input">
+                            <input class="input" type="email" required="">
+                            <span class="form__input-text">Email</span>
+                        </div>
+                        <button type="submit" class="form__button">
+                            <span>Отправить</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="section-contacts-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.3354442085943!2d44.497789488816366!3d48.71818171213442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb3de0ccdcb9%3A0x258d275a6f221b7!2z0KfQtdGA0L3QvtC80L7RgNGB0LrQsNGPINGD0LsuLCAyNiwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCA0MDAwMTI!5e0!3m2!1sru!2sru!4v1597474476445!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </section>
-        <!-- Product-item -->
+        <!-- Contacts -->
 
         <!-- Footer -->
         <footer class="section-outer section-footer section-footer--gray">
