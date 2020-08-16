@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="overflow-y:hidden;">
+<body>
 
     <!-- Sprites -->
     <svg style="display: none;">
@@ -37,13 +37,17 @@
     </svg>
     <!-- /Sprites -->
 
-    <div class="main">
+    <div class="hamburger-menu-background" style="width: 0;"></div>
+
+    <div class="main main--full-page main--advantages">
         <!-- Header -->
         <header class="section-outer section-header">
             <div class="section-inner">
-                <a href="index.html" class="section-header-logo">
-                    <img src="img/header/logo.png" alt="">
-                </a>
+                <div class="section-header-logo">
+                    <a href="index.html">
+                        <img src="img/header/logo.png" alt="">
+                    </a>
+                </div>
                 <nav class="section-header-nav">
                     <a href="ourProduct.html" class="section-header-nav__link">
                         Наша продукция
@@ -58,7 +62,7 @@
                     </svg>
                     <div class="section-header-mail-text">info@neo-clean.ru</div>
                 </div>
-                <dhiv class="section-header-contact">
+                <div class="section-header-contact">
                     <svg class="tel">
                         <use xlink:href="#tel"></use>
                     </svg>
@@ -67,7 +71,12 @@
                         <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
                         <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
                     </div>
-                </dhiv>
+                </div>
+                <div class="section-header-hamburger">
+                    <span id="bar1" class=bar></span>
+                    <span id="bar2" class=bar></span>
+                    <span id="bar3" class=bar></span>
+                </div>
             </div>
         </header>
         <!-- /Header -->
@@ -118,7 +127,6 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                     <div class="section-advantages-box box--margin-top">
                         <div class="section-advantages-box__title title--margin-bottom">
@@ -141,7 +149,7 @@
                                     Вы получите тот результат, который Вы ждали от него
                                 </div>
                             </div>
-                            <div class="section-advantages-box__item">
+                            <div class="section-advantages-box__item item--margin-top">
                                 <div class="section-advantages-box__item-img">
                                     <img src="img/advantages/result.svg" alt="">
                                 </div>
@@ -156,11 +164,13 @@
         </section>
         <!-- /Advantages -->
 
-        <footer class="section-outer section-footer section-footer-first-block">
+
+        <!-- Footer -->
+        <footer class="section-outer section-footer section-footer-first-block section-footer--advantages">
             <div class="section-inner">
                 <div class="section-footer-copyright">
                     <span>2019-2020</span>
-                    <span>ООО "Неонклин"</span>
+                    <span>ООО "Неоклин"</span>
                 </div>
                 <nav class="section-footer-nav">
                     <a href="#" class="section-footer-nav__link">
@@ -190,7 +200,8 @@
                 </div>
             </div>
         </footer>
+        <!-- /Footer -->
     </div>
-
+    <script src="js/header.js"></script>
 </body>
 </html>

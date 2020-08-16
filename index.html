@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="overflow-y:hidden;">
+<body>
 
     <!-- Sprites -->
     <svg style="display: none;">
         <symbol id="email" viewBox="0 0 16 12">
             <g>
-                <path fill="#443e3e" d="M14.594-.09C15.37-.09 16 .544 16 1.316v9.375c0 .777-.634 1.406-1.406 1.406H1.406A1.409 1.409 0 0 1 0 10.691V1.316C0 .541.632-.09 1.406-.09zM1.605.848l6.425 6.37L14.4.847zm3.847 5.134L.938 1.506v8.991zM14.4 11.16L9.906 6.667 8.363 8.21a.469.469 0 0 1-.662.002l-1.583-1.57L1.6 11.16zm.662-9.65L10.57 6.004l4.493 4.493z"/>
+                <path d="M14.594-.09C15.37-.09 16 .544 16 1.316v9.375c0 .777-.634 1.406-1.406 1.406H1.406A1.409 1.409 0 0 1 0 10.691V1.316C0 .541.632-.09 1.406-.09zM1.605.848l6.425 6.37L14.4.847zm3.847 5.134L.938 1.506v8.991zM14.4 11.16L9.906 6.667 8.363 8.21a.469.469 0 0 1-.662.002l-1.583-1.57L1.6 11.16zm.662-9.65L10.57 6.004l4.493 4.493z"/>
             </g>
         </symbol>
         <symbol id="tel" viewBox="0 0 15 15">
             <g>
-                <path fill="#443e3e" d="M10.78 15c-.484 0-.964-.086-1.433-.256a15.29 15.29 0 0 1-5.552-3.539A15.288 15.288 0 0 1 .256 5.653a4.149 4.149 0 0 1-.212-2.039A4.247 4.247 0 0 1 2.231.5c.617-.332 1.29-.5 2-.5.221 0 .412.154.458.37l.736 3.434a.469.469 0 0 1-.127.43L4.041 5.49a12.339 12.339 0 0 0 5.468 5.468l1.257-1.257a.47.47 0 0 1 .43-.127l3.433.736c.217.046.37.237.37.458 0 .71-.167 1.383-.499 2a4.264 4.264 0 0 1-3.114 2.186c-.202.03-.404.045-.606.045zM3.856.958a3.247 3.247 0 0 0-2.321 1.383 3.23 3.23 0 0 0-.398 2.992 14.217 14.217 0 0 0 8.53 8.53 3.23 3.23 0 0 0 2.992-.398 3.247 3.247 0 0 0 1.383-2.321l-2.793-.599-1.313 1.313a.469.469 0 0 1-.53.093 13.273 13.273 0 0 1-6.357-6.356.469.469 0 0 1 .093-.531l1.313-1.313z"/>
+                <path d="M10.78 15c-.484 0-.964-.086-1.433-.256a15.29 15.29 0 0 1-5.552-3.539A15.288 15.288 0 0 1 .256 5.653a4.149 4.149 0 0 1-.212-2.039A4.247 4.247 0 0 1 2.231.5c.617-.332 1.29-.5 2-.5.221 0 .412.154.458.37l.736 3.434a.469.469 0 0 1-.127.43L4.041 5.49a12.339 12.339 0 0 0 5.468 5.468l1.257-1.257a.47.47 0 0 1 .43-.127l3.433.736c.217.046.37.237.37.458 0 .71-.167 1.383-.499 2a4.264 4.264 0 0 1-3.114 2.186c-.202.03-.404.045-.606.045zM3.856.958a3.247 3.247 0 0 0-2.321 1.383 3.23 3.23 0 0 0-.398 2.992 14.217 14.217 0 0 0 8.53 8.53 3.23 3.23 0 0 0 2.992-.398 3.247 3.247 0 0 0 1.383-2.321l-2.793-.599-1.313 1.313a.469.469 0 0 1-.53.093 13.273 13.273 0 0 1-6.357-6.356.469.469 0 0 1 .093-.531l1.313-1.313z"/>
             </g>
         </symbol>
         <symbol id="inst" viewBox="0 0 14 14">
@@ -37,13 +37,17 @@
     </svg>
     <!-- /Sprites -->
 
-    <div class="main">
+    <div class="hamburger-menu-background" style="width: 0;"></div>
+
+    <div class="main main--full-page main--advantages">
         <!-- Header -->
         <header class="section-outer section-header">
             <div class="section-inner">
-                <a href="index.html" class="section-header-logo">
-                    <img src="img/header/logo.png" alt="">
-                </a>
+                <div class="section-header-logo">
+                    <a href="index.html">
+                        <img src="img/header/logo.png" alt="">
+                    </a>
+                </div>
                 <nav class="section-header-nav">
                     <a href="ourProduct.html" class="section-header-nav__link">
                         Наша продукция
@@ -58,7 +62,7 @@
                     </svg>
                     <div class="section-header-mail-text">info@neo-clean.ru</div>
                 </div>
-                <dhiv class="section-header-contact">
+                <div class="section-header-contact">
                     <svg class="tel">
                         <use xlink:href="#tel"></use>
                     </svg>
@@ -67,7 +71,12 @@
                         <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
                         <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
                     </div>
-                </dhiv>
+                </div>
+                <div class="section-header-hamburger">
+                    <span id="bar1" class=bar></span>
+                    <span id="bar2" class=bar></span>
+                    <span id="bar3" class=bar></span>
+                </div>
             </div>
         </header>
         <!-- /Header -->
@@ -163,19 +172,19 @@
                         </object>
                 </div>
                 <div class="bubble--item anim-items bubble--ecolys">
-                    <div class="buble-wrapper">
+                    <div class="bubble-wrapper">
                         <img src="img/first-block/bubble-EcoLys.png" alt="">
                         <div class="bubble-text">EcoLys</div>
                     </div>
                 </div>
                 <div class="bubble--item anim-items bubble--neo">
-                    <div class="buble-wrapper">
+                    <div class="bubble-wrapper">
                         <img src="img/first-block/bubble-neo.png" alt="">
                         <div class="bubble-text">NEO</div>
                     </div>
                 </div>
                 <div class="bubble--item anim-items bubble--losot">
-                    <div class="buble-wrapper">
+                    <div class="bubble-wrapper">
                         <img src="img/first-block/bubble-LotosNeo.png" alt="">
                         <div class="bubble-text">LotosNeo</div>
                     </div>
@@ -188,7 +197,7 @@
             <div class="section-inner">
                 <div class="section-footer-copyright">
                     <span>2019-2020</span>
-                    <span>ООО "Неонклин"</span>
+                    <span>ООО "Неоклин"</span>
                 </div>
                 <nav class="section-footer-nav">
                     <a href="#" class="section-footer-nav__link">
@@ -221,5 +230,6 @@
     </div>
 
     <script src="js/first-block.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>

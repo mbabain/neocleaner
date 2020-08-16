@@ -49,13 +49,44 @@
     </svg>
         <!-- /Sprites -->
 
+    <div class="hamburger-menu-background" style="width: 0;"></div>
+
+    <div class="modal" style="display: none;">
+        <div class="modal-background"></div>
+        <form action="#" class="form">
+            <div class="form__button-close">
+                <svg class="close">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+            <div class="form__title">Свяжитесь с нами</div>
+            <div class="form__input">
+                <input class="input" type="text" required="">
+                <span class="form__input-text">Ваше имя</span>
+            </div>
+            <div class="form__input">
+                <input class="input" type="tel" required="">
+                <span class="form__input-text">Телефон</span>
+            </div>
+            <div class="form__input">
+                <input class="input" type="email" required="">
+                <span class="form__input-text">Email</span>
+            </div>
+            <button type="submit" class="modal-form__button">
+                <span>Отправить</span>
+            </button>
+        </form>
+    </div>
+
     <div class="main">
         <!-- Header -->
         <header class="section-outer section-header">
             <div class="section-inner">
-                <a href="index.html" class="section-header-logo">
-                    <img src="img/header/logo.png" alt="">
-                </a>
+                <div class="section-header-logo">
+                    <a href="index.html">
+                        <img src="img/header/logo.png" alt="">
+                    </a>
+                </div>
                 <nav class="section-header-nav">
                     <a href="ourProduct.html" class="section-header-nav__link active">
                         <span>Наша продукция</span>
@@ -70,7 +101,7 @@
                     </svg>
                     <div class="section-header-mail-text">info@neo-clean.ru</div>
                 </div>
-                <dhiv class="section-header-contact">
+                <div class="section-header-contact">
                     <svg class="tel">
                         <use xlink:href="#tel"></use>
                     </svg>
@@ -79,7 +110,12 @@
                         <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
                         <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
                     </div>
-                </dhiv>
+                </div>
+                <div class="section-header-hamburger">
+                    <span id="bar1" class=bar></span>
+                    <span id="bar2" class=bar></span>
+                    <span id="bar3" class=bar></span>
+                </div>
             </div>
         </header>
         <!-- /Header -->
@@ -89,6 +125,17 @@
             <div class="section-inner">
                 <div class="title">LotosNeo</div>
                 <div class="section-product-descripton__item">
+                    <div class="section-product-descripton__about">
+                        <div class="section-product-descripton__about__title">
+                            Стиральный порошок LotosNeo
+                        </div>
+                        <div class="section-product-descripton__about__text">
+                            Задумайтесь: часто ли Вы стираете вещи с сильными загрязнениями? В большинстве случаев вещи необходимо освежить после ежедневного использования. Тогда зачем переплачивать за свойства моющих средств отстирывать сложные пятна?
+                            <p>
+                                "Lotos NEO" - стиральный порошок для ежедневного использования. Он отлично справляется с несложными загрязнениями, придаёт Вашим вещам чистоту и свежесть, но при этом существенно экономит Ваш бюджет.
+                            </p>
+                        </div>
+                    </div>
                     <div class="section-product-descripton-specifications">
                         <div class="section-product-descripton-specifications__item">
                             <div class="section-product-descripton-specifications__img">
@@ -185,7 +232,7 @@
             <div class="section-inner">
                 <div class="section-footer-copyright">
                     <span>2019-2020</span>
-                    <span>ООО "Неонклин"</span>
+                    <span>ООО "Неоклин"</span>
                 </div>
                 <nav class="section-footer-nav">
                     <a href="#" class="section-footer-nav__link">
@@ -216,6 +263,7 @@
             </div>
         </footer>
         <!-- /Footer -->
+        <script src="js/header.js"></script>
     </div>
 </body>
 </html>

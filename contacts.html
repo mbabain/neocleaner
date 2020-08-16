@@ -54,13 +54,17 @@
     </svg>
         <!-- /Sprites -->
 
-    <div class="main">
+        
+<div class="hamburger-menu-background" style="width: 0;"></div>
+
         <!-- Header -->
         <header class="section-outer section-header">
             <div class="section-inner">
-                <a href="index.html" class="section-header-logo">
-                    <img src="img/header/logo.png" alt="">
-                </a>
+                <div class="section-header-logo">
+                    <a href="index.html">
+                        <img src="img/header/logo.png" alt="">
+                    </a>
+                </div>
                 <nav class="section-header-nav">
                     <a href="ourProduct.html" class="section-header-nav__link">
                         <span>Наша продукция</span>
@@ -75,7 +79,7 @@
                     </svg>
                     <div class="section-header-mail-text">info@neo-clean.ru</div>
                 </div>
-                <dhiv class="section-header-contact">
+                <div class="section-header-contact">
                     <svg class="tel">
                         <use xlink:href="#tel"></use>
                     </svg>
@@ -84,17 +88,21 @@
                         <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
                         <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
                     </div>
-                </dhiv>
+                </div>
+                <div class="section-header-hamburger">
+                    <span id="bar1" class=bar></span>
+                    <span id="bar2" class=bar></span>
+                    <span id="bar3" class=bar></span>
+                </div>
             </div>
         </header>
         <!-- /Header -->
 
         <!-- Contacts -->
-        <section class="section-outer section-contacts">
+        <section class="section-contacts">
             <div class="section-inner">
-                <div class="section-contacts-addresses-and-form">
-                    <div class="title">Контакты</div>
                     <div class="addresses">
+                        <div class="title">Контакты</div>
                         <div class="address">
                             <div class="address__title">Юридическтй адрес :</div>
                             <div class="address__text">город Волгоград, ул.Черноморская д.26, 400012
@@ -116,28 +124,31 @@
                                 <a class="address__text">info@neo-clean.ru</a>
                             </div>
                         </div>
-                    </div>
-                    <form action="#" class="form">
-                        <div class="form__title">Свяжитесь с нами</div>
-                        <div class="form__input">
-                            <input class="input" type="text" required="">
-                            <span class="form__input-text">Ваше имя</span>
-                        </div>
-                        <div class="form__input">
-                            <input class="input" type="tel" required="">
-                            <span class="form__input-text">Телефон</span>
-                        </div>
-                        <div class="form__input">
-                            <input class="input" type="email" required="">
-                            <span class="form__input-text">Email</span>
+                    </div>   
+                    <form action="#" class="form form--width-100">
+                        <div class="form-wrapper">
+                            <div class="form__title">Свяжитесь с нами</div>
+                            <div class="form__input">
+                                <input class="input" type="text" required="">
+                                <span class="form__input-text">Ваше имя</span>
+                            </div>
+                            <div class="form__input">
+                                <input class="input" type="tel" required="">
+                                <span class="form__input-text">Телефон</span>
+                            </div>
+                            <div class="form__input">
+                                <input class="input" type="email" required="">
+                                <span class="form__input-text">Email</span>
+                            </div>
                         </div>
                         <button type="submit" class="form__button">
                             <span>Отправить</span>
                         </button>
                     </form>
-                </div>
-                <div class="section-contacts-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.3354442085943!2d44.497789488816366!3d48.71818171213442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb3de0ccdcb9%3A0x258d275a6f221b7!2z0KfQtdGA0L3QvtC80L7RgNGB0LrQsNGPINGD0LsuLCAyNiwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCA0MDAwMTI!5e0!3m2!1sru!2sru!4v1597474476445!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="section-contacts-map">
+                        <div class="section-contacts-map-title">Мы находимся</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.3354442085943!2d44.497789488816366!3d48.71818171213442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb3de0ccdcb9%3A0x258d275a6f221b7!2z0KfQtdGA0L3QvtC80L7RgNGB0LrQsNGPINGD0LsuLCAyNiwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCA0MDAwMTI!5e0!3m2!1sru!2sru!4v1597474476445!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div> 
                 </div>
             </div>
         </section>
@@ -179,6 +190,6 @@
             </div>
         </footer>
         <!-- /Footer -->
-    </div>
+    <script src="js/header.js"></script>
 </body>
 </html>
