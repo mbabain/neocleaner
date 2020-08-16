@@ -119,6 +119,12 @@ body {
         transform-origin: center;
         transition: 0.5s;
         transform: scale(0);
+        transition: 0.2s ease-in;
+    }
+
+    .active-modal--bg {
+        transform: scale(1);
+        border-radius: 0;
     }
 }
 
@@ -141,10 +147,16 @@ body {
         top: 12px;
         z-index: 100;
         cursor: pointer;
+        transform-origin: center;
+        transition: 0.5s;
 
         svg {
             width: 19px;
             height: 19px;
+        }
+
+        &:hover {
+            transform: rotate(360deg);
         }
     }
 
