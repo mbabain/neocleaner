@@ -26,7 +26,7 @@ body {
   .main--advantages {
     overflow-y: hidden; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 900px) {
   .main--index {
     overflow-y: hidden; } }
 

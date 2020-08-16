@@ -58,7 +58,7 @@ body {
 }
 
 .main--index {
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-xl) and (min-height: 900px) {
         overflow-y: hidden;
     }
 }
