@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <!-- Sprites -->
@@ -56,7 +57,7 @@
 
 <div class="hamburger-menu-background" style="width: 0;"></div>
 
-    <div class="modal" style="display: none;">
+    <div class="modal">
         <div class="modal-background"></div>
         <form action="#" class="form">
             <div class="form__button-close">
@@ -112,7 +113,7 @@
                     </svg>
                     <div class="section-header-contact-text">
                         <div class="section-header-contact-city">Волгоград</div>
-                        <div class="section-header-contact-text__telephone">+7 (999) 333 0000</div>
+                        <a href="tel:+7999333000" class="section-header-contact-text__telephone">+7 (999) 333 0000</a>
                         <div class="section-header-contact-text__free">Бесплатная горячая линия</div>
                     </div>
                 </div>
@@ -197,19 +198,31 @@
                         </div>
                     </div>
                     <div class="section-product-descripton-slider">
-                     <img src="img/product-description/ecolys.png" alt="">
-                     <div class="section-product-descripton-slider-buttons">
-                        <div class="section-product-descripton-slider__button">
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <div class="slider-item">
+                                    <img src="img/product-description/ecolys.png" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/product-description/ecolys.png" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/product-description/ecolys.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-product-descripton-slider-buttons">
+                        <div class="section-product-descripton-slider__button btn-prev">
                             <svg class="arrow arrow--prev">
                                 <use xlink:href="#arrow"></use>
                             </svg>
                         </div>
-                        <div class="section-product-descripton-slider__button">
+                        <div class="section-product-descripton-slider__button btn-next">
                             <svg class="arrow arrow--next">
                                 <use xlink:href="#arrow"></use>
                             </svg>
                         </div>
-                     </div>
+                        </div>
                     </div>
                     <div class="section-product-descripton-info">
                        <div class="section-product-descripton-info__title">Общая информация:
@@ -267,5 +280,7 @@
         <!-- /Footer -->
     </div>
     <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/buy.js"></script>
 </body>
 </html>
