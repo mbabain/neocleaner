@@ -100,6 +100,7 @@ body {
     transform-origin: center;
     transition: 0.5s; }
     .form__button-close svg {
+      display: block;
       width: 19px;
       height: 19px; }
     .form__button-close:hover {
@@ -253,9 +254,12 @@ body {
     .section-header {
       color: #ffffff; }
       .section-header .active {
-        display: flex; }
+        transform: scale(1); }
       .section-header-nav, .section-header-mail, .section-header-contact {
-        display: none; }
+        overflow: hidden;
+        transition: 0.2s;
+        transform-origin: right;
+        transform: scale(0); }
       .section-header-nav {
         position: absolute;
         top: 35%;
@@ -339,10 +343,13 @@ body {
           position: absolute;
           right: 35px;
           top: 52%;
-          transform: translateY(-50%);
           font-size: 16px;
           font-weight: 600;
-          display: none; } }
+          transform-origin: top;
+          transition: 0.2s;
+          transform: scale(0) translateY(-50%); }
+        .section-header-hamburger .hamburger-text-active {
+          transform: scale(1) translateY(-50%); } }
   @media (min-width: 1200px) {
     .section-header-nav__link {
       margin-right: 32px;

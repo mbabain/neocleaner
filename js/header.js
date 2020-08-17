@@ -9,12 +9,14 @@ const bar1 = document.getElementById('bar1');
 const bar2 = document.getElementById('bar2');
 const bar3 = document.getElementById('bar3');
 
+console.log(habmurgerText);
+
 hamburgerButton.addEventListener("click", () => {
     navMenu.classList.toggle('active');
     contactMail.classList.toggle('active');
     contactTel.classList.toggle('active');
     document.body.classList.toggle('overflow-y');
-    habmurgerText.classList.toggle('active');
+    habmurgerText.classList.toggle('hamburger-text-active');
     bar1.classList.toggle('active-bar1');
     bar2.classList.toggle('active-bar2');
     bar3.classList.toggle('active-bar3');
