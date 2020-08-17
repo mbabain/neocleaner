@@ -42,8 +42,8 @@ body {
 }
 
 .main {
-    position: relative;
-    height: 100vh;
+        position: relative;
+        height: 100vh;
 }
 
 .main--full-page {
@@ -52,13 +52,25 @@ body {
 }
 
 .main--advantages {
-    @media (min-width: $screen-xl) and (min-height: 900px) {
+    @media (min-width: $screen-xl) and (min-height: 845px) {
+        position: relative;
+        height: 100vh;
+    }
+
+    @media (min-width: $screen-lg) and (min-height: 845px)  {
+        position: relative;
+        height: 100vh;
+        background-image: linear-gradient(to right, #16b1e4, #19a4d6, #1c97c9, #1d8abb, #1e7dad);
+    }
+
+
+    @media (min-width: $screen-xl) and (min-height: 865px) {
         overflow-y: hidden;
     }
 }
 
 .main--index {
-    @media (min-width: $screen-xl) and (min-height: 900px) {
+    @media (min-width: $screen-xl) {
         overflow-y: hidden;
     }
 }
@@ -994,7 +1006,7 @@ body {
         bottom: -35px;
     }
 
-    @media (min-width: $screen-xl) and (min-height: 900px) {
+    @media (min-width: $screen-xl) {
         position: absolute;
         bottom: 14px;
     }
@@ -1019,8 +1031,18 @@ body {
 }
 
 .section-footer--advantages {
+    @media (min-width: $screen-lg) and (min-height: 845px) {
+        position: absolute;
+        bottom: -35px;
+    }
+
     @media (min-width: $screen-lg) {
         background-image: linear-gradient(to right, #16b1e4, #19a4d6, #1c97c9, #1d8abb, #1e7dad);
+    }
+
+    @media (min-width: $screen-xl) and (min-height: 865px) {
+        position: absolute;
+        bottom: 14px;
     }
 }
 // / Footer

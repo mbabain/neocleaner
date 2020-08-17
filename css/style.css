@@ -22,11 +22,22 @@ body {
   position: relative;
   height: 100vh; }
 
-@media (min-width: 1200px) and (min-height: 900px) {
+@media (min-width: 1200px) and (min-height: 845px) {
+  .main--advantages {
+    position: relative;
+    height: 100vh; } }
+
+@media (min-width: 992px) and (min-height: 845px) {
+  .main--advantages {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right, #16b1e4, #19a4d6, #1c97c9, #1d8abb, #1e7dad); } }
+
+@media (min-width: 1200px) and (min-height: 865px) {
   .main--advantages {
     overflow-y: hidden; } }
 
-@media (min-width: 1200px) and (min-height: 900px) {
+@media (min-width: 1200px) {
   .main--index {
     overflow-y: hidden; } }
 
@@ -675,7 +686,7 @@ body {
     position: absolute;
     bottom: -35px; } }
 
-@media (min-width: 1200px) and (min-height: 900px) {
+@media (min-width: 1200px) {
   .section-footer-first-block {
     position: absolute;
     bottom: 14px; } }
@@ -691,9 +702,19 @@ body {
   .section-footer--gray .section-footer-nav__link {
     color: #443e3e; }
 
+@media (min-width: 992px) and (min-height: 845px) {
+  .section-footer--advantages {
+    position: absolute;
+    bottom: -35px; } }
+
 @media (min-width: 992px) {
   .section-footer--advantages {
     background-image: linear-gradient(to right, #16b1e4, #19a4d6, #1c97c9, #1d8abb, #1e7dad); } }
+
+@media (min-width: 1200px) and (min-height: 865px) {
+  .section-footer--advantages {
+    position: absolute;
+    bottom: 14px; } }
 
 .section-product {
   min-height: calc(100vh - 57px - 86px);
